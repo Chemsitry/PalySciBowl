@@ -3,7 +3,7 @@ nav {
   background-color: #000;
   display:flex;
   flex-direction: column;
-  height: 37vw;
+  height: 44vw;
   width:100%;
   align-items: center;
   border-bottom:1px solid rgb(255,255,255,1);
@@ -13,13 +13,11 @@ nav{
   transition-property: border-color;
 }
 nav > div {
-  width: 90%;
-  height: 9vw;
+  width: 95%;
+  height: 10.5vw;
   align-content: center;
   text-align: center;
-  font-size: 6vw;
-}
-nav > div:hover {
+  font-size: 5.5vw;
 }
 nav > div > a {
   align-content: center;
@@ -30,13 +28,14 @@ nav > div > a {
     background-color: #000;
     display:flex;
     flex-direction: row;
-    height: 6vw;
+    height: 5.4vw;
     width:100vw;
     align-items: center;
   }
   nav{
     transition-duration: 0.4s;
     transition-property: border-color;
+    transition-timing-function: ease;
   }
   nav{
     border-bottom:1px solid rgb(255,255,255,0);
@@ -45,20 +44,20 @@ nav > div > a {
     border-bottom:1px solid rgb(255,255,255,.5);
   }
   nav > div {
-    width: 16vw;
-    height: 6vw;
-    align-content: center;
+    width: 17vw;
+    height: 5.4vw;
     text-align: center;
-    font-size: 2.3vw;
+    font-size: 2.4vw;
   }
   nav > div > a {
-    transition-duration: 0.2s;
+    transition-duration: 0.18s;
     transition-property: color;
+    transition-timing-function: ease;
   }
   nav > div:hover {
   }
   nav > div > a {
-    align-content: center;
+    text-align: center;
   }
 }
 nav :link, nav :visited {
@@ -67,6 +66,7 @@ nav :link, nav :visited {
 
 
 body{
+  overflow-y: scroll;
   background-color:#000
 }
 a, p, h1{
@@ -77,23 +77,32 @@ a{
   text-decoration:none;
 }
 a:hover{
-  color:#0e6219;
+  color:#0c6219;
 }
-p{
-  font-size: 18px
-}
+p{font-size: 18px}
+h1{font-size:36px}
+.fullwidthtext{padding: 0px 12px 0px 12px;}
+.subtitle{padding: 20px 0px 0px 24px;}
 @media (min-width:700px) {
-  p{
-    font-size: 20px
-  }
+  p{font-size: 20px}
+  h1{font-size:40px}
+  .fullwidthtext{padding: 0px 24px 0px 6px;}
+  .subtitle{padding: 2vw 0px 0px 24px;}
 }
 @media (min-width:1280px) {
-  p{
-    font-size: 24px
-  }
+  p{font-size: 24px}
+  h1{font-size:60px}
+}
+
+div{
+  margin: 0;padding:0;
 }
 
 .hometitle{
 }
 .hometitle > div {
+}
+
+::-webkit-scrollbar-track {
+  background: #000;
 }
