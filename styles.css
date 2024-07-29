@@ -1,9 +1,50 @@
+nav {
+  position:fixed;top:0;width:100%;
+  background-color: #000;
+  display:flex;
+  flex-direction: row;
+  height: 6vw;
+  width:100vw;
+  align-items: center;
+}
+nav :link, nav :visited {
+/*  width:60px;*/
+  color:#fff;
+  background-color:#000000;
+
+}
+nav{
+  border-bottom:1px solid rgb(255,255,255,0);
+  transition-duration: 0.3s;
+}
+nav:hover{
+  border-bottom:1px solid rgb(255,255,255,.5);
+}
+nav > div {
+  transition-duration: 0.5s;
+  width: 15%;
+  height: 6vw;
+  align-content: center;
+  text-align: center;
+  font-size: 1.8vw;
+}
+nav > div:hover {
+}
+nav > div > a {
+  align-content: center;
+}
 body{
   background-color:#000
 }
-p, h1{
+a, p, h1{
   font-family: Arial, sans-serif;
   color:#fff
+}
+a{
+  text-decoration:none;
+}
+a:hover{
+
 }
 p{
   font-size: 16px
