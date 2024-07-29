@@ -2,7 +2,7 @@
 <html lang="en-US">
 <head>
 <title>Paly SciBowl home</title>
-<base href="https://palysciencebowl.vercel.app/" target="_self">
+<base href="https://palysciencebowl.vercel.app/target" target="_self">
 <link rel="icon" type="image/x-icon" href="images/PSBLogo.png">
 <link rel="stylesheet" href="styles.css">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,6 +23,7 @@ function setSize() {
   var hometitle = document.querySelector('.hometitle');
   var titleimage = document.getElementById('titleimage');
   var titleimagediv = document.getElementById('titleimagediv');
+  var titletext = document.getElementById('titletext');
   if(w>700){
     if(h > (0.32*w)){
       console.log("the screen is a decent size! h:" + h + " and 0.4*w:" + (0.4*w));
@@ -37,6 +38,7 @@ function setSize() {
       vertical-align:top`);
       titleimagediv.setAttribute('style', 'width:26%');
       titleimage.setAttribute('style', 'width:26vw');
+      titletext.setAttribute('style', "width:62%;height:21vw;align-items:top");
     } else {
       console.log("the screen is a bit fat h:" + h + " and 0.4*w:" + (0.4*w));
       hometitle.setAttribute('style', `font-family: "Arial", sans-serif;
@@ -50,19 +52,20 @@ function setSize() {
       vertical-align:top`);
       titleimagediv.setAttribute('style', 'width:26%');
       titleimage.setAttribute('style', 'width:26vw');
+      titletext.setAttribute('style', "width:62%;height:21vw;align-items:top");
     }
   } else {
     hometitle.setAttribute('style', `font-family: "Arial", sans-serif;
     display:flex;
     flex-direction: column;
-    height: 120vw;
+    height: 110vw;
     align-items: center;
     color:#fff;
-    font-size:8vw;
+    font-size:12vw;
     word-spacing: 0vw; `);
-    titleimagediv.setAttribute('style', 'width:50%');
-    titleimage.setAttribute('style', 'width:49vw');
-
+    titleimagediv.setAttribute('style', 'width:55%');
+    titleimage.setAttribute('style', 'width:54vw');
+    titletext.setAttribute('style', "width:82%;height:21vw;align-items:top");
   }
 }
 </script>
@@ -70,10 +73,10 @@ function setSize() {
 
 
 <nav>
-  <div><a href="https://papho.vercel.app/">Home</a></div>
-  <div><a href="https://papho.vercel.app/">Join</a></div>
-  <div><a href="https://papho.vercel.app/">About</a></div>
-  <div><a href="https://papho.vercel.app/">Contact</a></div>
+  <div><a href="/">Home</a></div>
+  <div><a href="/join">Join</a></div>
+  <div><a href="/about">About</a></div>
+  <div><a href="/contact">Contact</a></div>
 </nav>
 
 
@@ -82,7 +85,7 @@ function setSize() {
 
 <div class="hometitle">
   <div id="titleimagediv"> <img id="titleimage" src="images/PSBLogo.png" alt="PSBLogo" style="width:30vw"> </div>
-  <div id="titletext" style="width:60%;height:21vw;align-items:top">Paly Science Bowl</div>
+  <div id="titletext" style="width:62%;height:21vw;align-items:top">Paly Science Bowl</div>
 </div>
 
 <p>A team dedicated to competing at Science Bowl, the national competiton hosted by the US Department of Energy. By creating a community working together to advance the pursuit of knowledge, Paly SciBowl inspires passion for competition and learning.</p>
