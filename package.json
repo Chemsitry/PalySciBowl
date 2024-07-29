@@ -2,6 +2,12 @@
   "private": true,
   "dependencies": {
     "@vercel/edge": "^0.1.2"
-  }
-  "description": "Palo Alto High School Science Bowl website"
+  },
+  "description": "Paly Science Bowl website",
+  "keywords": ["Paly", "SciBowl"],
+  "author": "Forrest Chou",
+  "repository": {
+		"type": "git",
+		"url": "https://github.com/Chemsitry/PalySciBowl/"
+	},
 }
