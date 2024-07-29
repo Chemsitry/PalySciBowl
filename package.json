@@ -3,7 +3,5 @@
   "dependencies": {
     "@vercel/edge": "^0.1.2"
   }
-}
-{
   "description": "Palo Alto High School Science Bowl website"
 }
